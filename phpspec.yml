@@ -1,0 +1,6 @@
+suites:
+    parser:
+        src_prefix: Controller
+        spec_prefix: tests
+        src_path: ./
+        spec_path: ./

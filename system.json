@@ -1,0 +1,47 @@
+{
+  "name": "Main System",
+  "rooms": [
+    {
+      "name": "Master Bedroom",
+      "devices": [
+        {"type": "dimmer"},
+        {"type": "television"},
+        {"type": "cable"}
+      ]
+    },
+    {
+      "name": "Living Room",
+      "devices": [
+        {"type": "dimmer"},
+        {"type": "thermostat"},
+        {"type": "television"},
+        {"type": "cable"},
+        {"type": "chromecast"},
+        {"type": "appletv"},
+        {"type": "receiver"},
+        {"type": "projector"}
+      ]
+    },
+    {
+      "name": "Dashawn's Bedroom",
+      "devices": [
+        {"type": "dimmer"},
+        {"type": "television"},
+        {"type": "cable"}
+      ]
+    },
+    {
+      "name": "Arianna's Bedroom",
+      "devices": [
+        {"type": "dimmer"}
+      ]
+    },
+    {
+      "name": "Kitchen",
+      "devices": [
+        {"type": "dimmer", "status": 50, "name": "jasco dimmer"},
+        {"type": "doorlock", "status": "unlocked"}
+      ]
+    }
+  ]
+}

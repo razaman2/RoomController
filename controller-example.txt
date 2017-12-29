@@ -1,0 +1,10 @@
+$remote = new Remote();
+
+$remote->select('living room');
+when a room is selected, it must be assigned to the remote, this allows the remote to be linked to controll selected room
+
+$remote->turnOn($room->tv());
+
+$room->turnOff('tv');
+
+
