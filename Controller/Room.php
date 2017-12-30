@@ -4,9 +4,7 @@
 
 	class Room
 	{
-		use \Controller\Traits\Name;
-
-		protected $devices = [];
+		use \Controller\Traits\Name, \Controller\Traits\Collection;
 
 		public function __construct($room) {
 
@@ -14,19 +12,14 @@
 
 			foreach($room->devices as $device) {
 
-				$this->addDevice(Factory::make('device', $device));
+				$this->add($device,Factory::class, 'device');
 			}
-		}
-
-		public function addDevice(Device $device) {
-
-			array_push($this->devices, $device);
 		}
 
 		public function removeDevice($device) {
 
-			$index = in_array($device, $this->devices);
+			$index = in_array($device, $this->collection);
 
-			array_splice($this->devices, $index,1);
+			unset($this->collection[$index]);
 		}
 	}

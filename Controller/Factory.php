@@ -2,7 +2,7 @@
 
 	namespace Controller;
 
-	class Factory
+	class Factory implements \Controller\Interfaces\BuilderInterface
 	{
 		static $objects = [
 			'device' => Device::class,
