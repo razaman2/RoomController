@@ -1,6 +1,6 @@
 <?php
 
-	namespace Controller\Interfaces;
+	namespace Interfaces;
 
 	interface Adjustable
 	{

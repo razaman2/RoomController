@@ -10,16 +10,9 @@
 
 			$this->setName($room->name);
 
-			foreach($room->devices as $device) {
+			foreach($room->devices ?? [] as $device) {
 
 				$this->add($device,Factory::class, 'device');
 			}
-		}
-
-		public function removeDevice($device) {
-
-			$index = in_array($device, $this->collection);
-
-			unset($this->collection[$index]);
 		}
 	}

@@ -1,8 +1,8 @@
 <?php
 
-	namespace Controller\Interfaces;
+	namespace Interfaces;
 
 	interface BuilderInterface
 	{
-		static function make($object, $params);
+		static function make($object, ...$params);
 	}
